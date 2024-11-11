@@ -12,7 +12,7 @@ public enum NetworkError: Error {
 }
 
 public final class NetworkManager {
-    public  let shared = NetworkManager()
+    @MainActor public static let shared = NetworkManager()
     
     private init() {}
     
